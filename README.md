@@ -10,6 +10,10 @@ Human readers were asked to identify dermatoscopic photos randomly picked in 30-
 ### Findings: 
 511 human readers from 63 countries had at least one attempt in the reader study. 283 of 511 human readers were board-certified dermatologists, 118 were dermatology residents, and 83 were general practitioners. When comparing all human readers with all machine-learning algorithms, the algorithms achieved a mean of 2·01 more correct diagnoses . 27 human experts with more than 10 years of experience achieved a mean of 18·78 correct answers, compared with 25·43 correct answers for the top three machine algorithms. The difference between human experts and the top three algorithms was significantly lower for images in the test set that were collected from sources not included in the training set .
 ### File 1: skincancer_1.ipynb
-here a simple convolution neural network is built. 
+Here a simple convolution neural network is built. 
 
 Architecture: input-->(convo2d --> maxpooling2d)x3-->dropout--> convo2d --> maxpooling2d -->dropout --> flatten -->Dense --> Output
+### File 2: skincancer_2.ipynb
+Keras pre-built model is used MobileNet.
+
+MobileNets are based on a streamlined architecture that uses depth-wise separable convolutions to build light weight deep neural networks.
